@@ -47,3 +47,7 @@ vim /etc/profile
 export JAVA_HOME=/usr/java/jdk1.7.0
 export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/jre/lib/dt.jar:$JAVA_HOME/jre/lib/tools.jar
 ```
+```
+export PATH $JAVA_HOME/bin
+source /etc/profile
+```
