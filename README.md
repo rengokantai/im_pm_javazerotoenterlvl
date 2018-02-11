@@ -25,3 +25,25 @@ Single database->single table->horizontal splitting.
 wget -O /etc/yum.repos.d/CentOS.repo http://resource
 yum makecache
 ```
+
+###### 03:22
+list:
+- linux service administration. learn/537  
+- iptables learn/389
+
+### 2-3
+Unistall preinstalled jdk from centos distribution
+```
+rpm -qa | grep jdk
+rpm-ivh xxx.rpm
+```
+default location /usr/java
+```
+/usr/java/jdk1.7.0_80
+```
+
+```
+vim /etc/profile
+export JAVA_HOME=/usr/java/jdk1.7.0
+export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/jre/lib/dt.jar:$JAVA_HOME/jre/lib/tools.jar
+```
