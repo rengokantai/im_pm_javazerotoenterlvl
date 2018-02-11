@@ -51,3 +51,22 @@ export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/jre/lib/dt.jar:$JAVA_HOM
 export PATH $JAVA_HOME/bin
 source /etc/profile
 ```
+
+### 3-1
+```
+CREATE TABLE `mmuser`(
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'cmt',
+  `username`
+  PRIMARY KEY(`id`),
+  UNIQUE KEY `user_n_unique` (`username`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8
+```
+cart.
+```
+CREATE TABLE `mmcart`(
+`id`
+`user_id`
+PRIMARY_KEY(`id`),
+KEY `user_id_index` (`user_id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=121 DEFAULT CHARSET=utf-8
+```
